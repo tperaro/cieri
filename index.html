@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tênis por Sinapses Neurais - Evolua mais em 5 horas que nos últimos 2 anos</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0A1128;
+            --accent-blue: #1282A2;
+            --accent-orange: #F34213;
+            --text-white: #FEFCFB;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: var(--primary-blue);
+            color: var(--text-white);
+            line-height: 1.6;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(10, 17, 40, 0.8), rgba(10, 17, 40, 0.8)), url('/home/ubuntu/landing_page_tenis/tenis_acao1.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-bg {
+            background: var(--primary-blue);
+        }
+        
+        .accent-text {
+            color: var(--accent-orange);
+        }
+        
+        .primary-text {
+            color: var(--accent-blue);
+        }
+        
+        .btn-primary {
+            background: var(--accent-blue);
+            color: var(--text-white);
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background: #1282A2;
+            transform: translateY(-2px);
+        }
+        
+        .feature-card {
+            background: rgba(18, 130, 162, 0.1);
+            border: 1px solid var(--accent-blue);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .guarantee-box {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-orange));
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .price-highlight {
+            background: var(--accent-orange);
+            color: var(--text-white);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .testimonial {
+            background: rgba(18, 130, 162, 0.1);
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--accent-orange), #d63612);
+            padding: 60px 0;
+        }
+        
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50px;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .countdown {
+            background: rgba(243, 66, 19, 0.2);
+            border: 2px solid var(--accent-orange);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .step-number {
+            background: var(--accent-orange);
+            color: var(--text-white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-6xl font-bold mb-6">
+                    TÊNIS POR <span class="primary-text">SINAPSES NEURAIS</span>
+                </h1>
+                <h2 class="text-3xl accent-text mb-8">
+                    Evolua mais em 5 horas mais do que em 50h em treinos convencionais
+                </h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Método revolucionário baseado em neuroplasticidade que acelera drasticamente seu aprendizado no tênis. 
+                    Desenvolvido por ex-tenista profissional com fundamentação científica de Harvard.
+                </p>
+                <div class="countdown mb-8">
+                    <h3 class="text-2xl font-bold accent-text mb-2">⏰ OFERTA LIMITADA</h3>
+                    <p class="text-lg">Apenas 10 vagas disponíveis nos próximos 5 dias</p>
+                </div>
+                <button class="btn-primary text-2xl px-12 py-4" onclick="scrollToOffer()">
+                    QUERO MINHA VAGA AGORA
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema Section -->
+    <section class="section-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 primary-text">
+                    VOCÊ ESTÁ CANSADO DE...
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle accent-text text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">Evolução Lenta e Frustrante</h3>
+                                <p>Centenas de horas de treino para resultados modestos que geram frustração e vontade de desistir</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle accent-text text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">Métodos Ultrapassados</h3>
+                                <p>Abordagens tradicionais que ignoram o potencial da neurociência para acelerar o aprendizado</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle accent-text text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">Platôs de Desempenho</h3>
+                                <p>Ficar estagnado no mesmo nível por meses ou anos, sem conseguir evoluir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="/home/ubuntu/landing_page_tenis/tenis_acao2.jpg" alt="Jogador de tênis" class="rounded-lg shadow-lg max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solução Section -->
+    <section class="section-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 primary-text">
+                    A REVOLUÇÃO CHEGOU
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="/home/ubuntu/landing_page_tenis/neuroplasticidade.jpg" alt="Neuroplasticidade" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-brain primary-text text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold primary-text mb-2">Neuroplasticidade Aplicada</h3>
+                                <p>Utilizamos a capacidade do cérebro de formar novas conexões para acelerar seu aprendizado</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-bolt primary-text text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold primary-text mb-2">Sinapses Otimizadas</h3>
+                                <p>Criamos "atalhos neurais" que permitem evolução em semanas, não anos</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-graduation-cap primary-text text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold primary-text mb-2">Base Científica Harvard</h3>
+                                <p>Método fundamentado em pesquisas de centros de excelência mundial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia Section -->
+    <section class="section-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 primary-text">
+                    METODOLOGIA EXCLUSIVA
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">Avaliação Neural</h3>
+                                <p>Mapeamento completo do seu perfil neuromotor atual</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">Ativação Sináptica</h3>
+                                <p>Exercícios específicos que estimulam a neuroplasticidade</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">Treinamento Integrado</h3>
+                                <p>Combinação única de técnica, tática e desenvolvimento cognitivo</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">Consolidação Neural</h3>
+                                <p>Fixação das novas conexões através de estímulos direcionados</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/home/ubuntu/landing_page_tenis/luxury_methodology.jpg" alt="Metodologia exclusiva" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados Section -->
+    <section class="section-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 primary-text">
+                    RESULTADOS COMPROVADOS
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-tachometer-alt accent-text text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold accent-text mb-2">70%</h3>
+                        <p>Redução no tempo de aprendizado de novos movimentos</p>
+                    </div>
+                    <div class="feature-card text-center">
+                        <i class="fas fa-bullseye accent-text text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold accent-text mb-2">40%</h3>
+                        <p>Aumento na precisão dos golpes fundamentais</p>
+                    </div>
+                    <div class="feature-card text-center">
+                        <i class="fas fa-lightning-bolt accent-text text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold accent-text mb-2">30%</h3>
+                        <p>Melhoria no tempo de reação e tomada de decisão</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="text-lg mb-4">
+                        "Eu estava estagnado há mais de 2 anos. Após as sessões de Tênis por Sinapses Neurais, consegui finalmente corrigir meu backhand e melhorar minha movimentação em quadra. É como se algo tivesse 'clicado' no meu cérebro."
+                    </p>
+                    <p class="primary-text font-bold">- Ricardo M., 42 anos, tenista amador</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta Section -->
+    <section id="offer" class="section-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 primary-text">
+                    SUA OPORTUNIDADE ÚNICA
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="price-highlight">
+                            R$ 1.000,00
+                            <div class="text-lg mt-2">Compare: 2 anos de aulas tradicionais = R$ 5.000 - R$ 10.000</div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle primary-text text-xl mr-3"></i>
+                                <span>2 sessões intensivas de 2,5 horas cada</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle primary-text text-xl mr-3"></i>
+                                <span>Avaliação neuromotora completa</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle primary-text text-xl mr-3"></i>
+                                <span>Metodologia exclusiva baseada em neurociência</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle primary-text text-xl mr-3"></i>
+                                <span>Plano personalizado de continuidade</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle primary-text text-xl mr-3"></i>
+                                <span>Local: Goiânia - GO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/home/ubuntu/landing_page_tenis/luxury_offer.jpg" alt="Oferta exclusiva" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantia Section -->
+    <section class="section-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="guarantee-box">
+                    <h2 class="text-4xl font-bold mb-6">
+                        <i class="fas fa-shield-alt mr-4"></i>
+                        GARANTIA TOTAL
+                    </h2>
+                    <h3 class="text-3xl font-bold mb-4">
+                        Evolua mais em 5 horas do que nos últimos 2 anos
+                    </h3>
+                    <h3 class="text-3xl font-bold mb-6">
+                        OU SEU DINHEIRO DE VOLTA
+                    </h3>
+                    <p class="text-xl mb-4">
+                        Se você não perceber evolução significativa após as 2 sessões, devolvemos 100% do seu investimento.
+                    </p>
+                    <p class="text-lg">
+                        Assumimos todo o risco para que você possa experimentar esta revolução no seu tênis sem qualquer preocupação.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgência Section -->
+    <section class="section-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8 accent-text">
+                    ⚠️ ATENÇÃO: VAGAS LIMITADAS
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="feature-card">
+                        <h3 class="text-2xl font-bold accent-text mb-2">Apenas 10 Vagas</h3>
+                        <p>Turma exclusiva para garantir atenção personalizada</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="text-2xl font-bold accent-text mb-2">5 Dias Apenas</h3>
+                        <p>Oferta válida por tempo limitado</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="text-2xl font-bold accent-text mb-2">Método Exclusivo</h3>
+                        <p>Não disponível em nenhum outro lugar</p>
+                    </div>
+                </div>
+                <p class="text-xl mb-8">
+                    Esta é sua única chance de experimentar uma revolução no seu tênis. 
+                    Se você esperar, pode perder a oportunidade.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-section">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl font-bold mb-6">
+                    RESERVE SUA VAGA AGORA!
+                </h2>
+                <p class="text-2xl mb-8">
+                    Não deixe para amanhã a evolução que você pode ter hoje
+                </p>
+                <button class="btn-primary text-3xl px-16 py-6 mb-8" onclick="openWhatsApp()">
+                    QUERO MINHA TRANSFORMAÇÃO
+                </button>
+                <p class="text-lg">
+                    💬 Clique no botão e fale diretamente comigo no WhatsApp
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Autor Section -->
+    <section class="section-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8 primary-text">
+                    SOBRE O CRIADOR DO MÉTODO
+                </h2>
+                <div class="feature-card">
+                    <h3 class="text-2xl font-bold accent-text mb-4">João Vitor Cieri de Moura</h3>
+                    <div class="space-y-3 text-left">
+                        <p><i class="fas fa-trophy accent-text mr-3"></i>Ex-tenista profissional com credibilidade reconhecida</p>
+                        <p><i class="fas fa-brain accent-text mr-3"></i>Especialista em neurociência aplicada ao esporte</p>
+                        <p><i class="fas fa-globe accent-text mr-3"></i>Rede de contatos em centros de excelência mundial</p>
+                        <p><i class="fas fa-star accent-text mr-3"></i>Desenvolvedor da metodologia "Tênis por Sinapses Neurais"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-bg py-10 border-t border-gray-700">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-4">
+                <strong>Tênis por Sinapses Neurais</strong> - Goiânia, GO
+            </p>
+            <p class="text-sm opacity-75">
+                Método revolucionário baseado em neuroplasticidade para acelerar o aprendizado no tênis
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="floating-whatsapp" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        function scrollToOffer() {
+            document.getElementById('offer').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openWhatsApp() {
+            // Substitua pelo seu número do WhatsApp
+            const phoneNumber = "5562999190473"; // Formato: código do país + DDD + número
+            const message = "Olá! Tenho interesse no método Tênis por Sinapses Neurais. Gostaria de saber mais sobre as vagas disponíveis.";
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Contador regressivo simples (opcional)
+        function updateCountdown() {
+            // Você pode implementar um contador real aqui
+            // Por enquanto, mantém o texto fixo
+        }
+
+        // Animações de scroll (opcional)
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.feature-card');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
