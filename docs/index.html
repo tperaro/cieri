@@ -22,7 +22,8 @@
         }
         
         .hero-section {
-            background: linear-gradient(rgba(10, 17, 40, 0.8), rgba(10, 17, 40, 0.8)), url('/image/Tennis.jpg');
+            /* CORREÇÃO AQUI: Removida a barra inicial do caminho */
+            background: linear-gradient(rgba(10, 17, 40, 0.8), rgba(10, 17, 40, 0.8)), url('image/Tennis.jpg');
             background-size: cover;
             background-position: center;
             min-height: 100vh;
@@ -204,7 +205,8 @@
                         </div>
                     </div>
                     <div class="flex justify-center items-center">
-                        <img src="/home/ubuntu/landing_page_tenis/tenis_acao2.jpg" alt="Jogador de tênis" class="rounded-lg shadow-lg max-w-full h-auto">
+                        <!-- CORREÇÃO AQUI: Caminho relativo. Lembre-se de enviar este arquivo! -->
+                        <img src="image/tenis_acao2.jpg" alt="Jogador de tênis" class="rounded-lg shadow-lg max-w-full h-auto">
                     </div>
                 </div>
             </div>
@@ -220,7 +222,8 @@
                 </h2>
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <img src="/home/ubuntu/landing_page_tenis/neuroplasticidade.jpg" alt="Neuroplasticidade" class="rounded-lg shadow-lg">
+                        <!-- CORREÇÃO AQUI: Caminho relativo. Lembre-se de enviar este arquivo! -->
+                        <img src="image/neuroplasticidade.jpg" alt="Neuroplasticidade" class="rounded-lg shadow-lg">
                     </div>
                     <div class="space-y-6">
                         <div class="flex items-start">
@@ -289,7 +292,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="/home/ubuntu/landing_page_tenis/luxury_methodology.jpg" alt="Metodologia exclusiva" class="rounded-lg shadow-lg">
+                        <!-- CORREÇÃO AQUI: Caminho relativo. Lembre-se de enviar este arquivo! -->
+                        <img src="image/luxury_methodology.jpg" alt="Metodologia exclusiva" class="rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>
@@ -369,7 +373,8 @@
                         </div>
                     </div>
                     <div>
-                        <img src="/home/ubuntu/landing_page_tenis/luxury_offer.jpg" alt="Oferta exclusiva" class="rounded-lg shadow-lg">
+                        <!-- CORREÇÃO AQUI: Caminho relativo. Lembre-se de enviar este arquivo! -->
+                        <img src="image/luxury_offer.jpg" alt="Oferta exclusiva" class="rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>
@@ -489,7 +494,8 @@
     </a>
 
     <script>
-        function scrollToOffer() {/
+        // CORREÇÃO AQUI: Removida uma barra "/" extra que causava erro.
+        function scrollToOffer() {
             document.getElementById('offer').scrollIntoView({ behavior: 'smooth' });
         }
 
@@ -523,4 +529,3 @@
     </script>
 </body>
 </html>
-
